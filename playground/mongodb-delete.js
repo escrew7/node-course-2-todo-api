@@ -20,7 +20,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   // db.collection('Todos').findOneAndDelete({completed: false}).then((result) => {
   //   console.log(result);
   // })
-  // db.close();
+
 
   // db.collection('Users').deleteMany({name: 'Luke'}).then((result) => {
   //   console.log(result)
@@ -31,4 +31,6 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
   }).then((result) => {
     console.log(JSON.stringify(result, undefined, 2))
   })
+
+    // db.close();
 })
